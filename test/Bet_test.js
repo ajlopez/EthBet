@@ -11,4 +11,12 @@ contract('Bet', function (accounts) {
         
         assert.equal(pot, 0);
     });
+    
+    it('bet', async function () {
+        await this.bet.bet({ value: 1000 });
+        
+        const pot = (await this.bet.pot()).toNumber();
+        
+        assert.ok(pot === 1000 || pot === 0);
+    });
 });
