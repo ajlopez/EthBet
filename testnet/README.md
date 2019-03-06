@@ -21,7 +21,7 @@ Copy `config.json.example` to `config.json`:
     "contract": "0xe9a8880e0b1535e7f00ecab9e1da38d63cba01a6",
     "account": {
         "address": "0x<your account address>",
-        "privateKey": "0x<your account private key"
+        "privateKey": "0x<your account private key>"
     }
 }
 ```
