@@ -26,6 +26,12 @@ Get bet contract status:
 node status
 ```
 
+It returns:
+- `pot`: the current total amount in the pot.
+- `fees`: fees gained by the contract (10% of the paid wins).
+- `balance`: your account balance (in weis).
+  
+
 Bet amount:
 
 ```
