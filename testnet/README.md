@@ -1,5 +1,9 @@
 # Bet on RSK Testnet
 
+The bet contract was deployed to RSK Testnet. These are the
+commands you can send to the contract, doing a bet and query the
+contract status.
+
 ## Install
 
 Run
@@ -9,7 +13,20 @@ npm install
 
 ## Configure
 
-Copy `config.json.example` to `config.json` and edit
+Copy `config.json.example` to `config.json`:
+
+```json
+{
+    "host": "https://public-node.testnet.rsk.co:443",
+    "contract": "0xe9a8880e0b1535e7f00ecab9e1da38d63cba01a6",
+    "account": {
+        "address": "0x<your account address>",
+        "privateKey": "0x<your account private key"
+    }
+}
+```
+
+Edit
 the account fields (`address` and `privateKey`). If you don't
 have an account or you don't know the private key, generate
 one using https://github.com/ajlopez/RskUtils/tree/master/keys
